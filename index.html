@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Noticias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .site {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .nav-main {
+            background-color: #495999;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .nav-main ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-main li {
+            list-style-type: none;
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+
+        .nav-main li:hover {
+            background-color: #3a4b89;
+            border-radius: 5px;
+        }
+        aside li{
+            list-style: none;
+        }
+        .div-main {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            gap: 20px;
+            border: 1px solid black;
+        }
+
+        h1,h2{
+            text-align: center;
+        }
+        .div-main aside {
+            flex: 1;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+
+        .div-main main {
+            flex: 3;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .news-article {
+            margin-bottom: 20px;
+        }
+        .news-article ul{
+            padding: 15px;
+        }
+        .news-article h2 {
+            margin-bottom: 10px;
+        }
+
+        .news-article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width: 600px) {
+            .div-main {
+                flex-direction: column;
+            }
+            
+          
+            .nav-main li {
+                padding: 10px 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="site">
+        <header class="header">
+            <nav>
+                <div class="nav-main">
+                    <ul>
+                        <li>Inicio</li>
+                        <li>Noticias</li>
+                        <li>Deportes</li>
+                        <li>Economía</li>
+                        <li>Contacto</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="div-main">
+            <aside>
+                <h2>Últimas Noticias</h2>
+                <ul>
+                    <li>Noticia 1</li>
+                    <li>Noticia 2</li>
+                    <li>Noticia 3</li>
+                    <li>Noticia 4</li>
+                </ul>
+            </aside>
+
+            <main>
+                <h1>Noticias Recientes</h1>
+
+                <div class="news-article">
+                    <blockquote class="twitter-tweet"><p lang="und" dir="ltr">Primer objetivo ✅🇨🇴 <a href="https://t.co/ILYDaYWlRC">pic.twitter.com/ILYDaYWlRC</a></p>&mdash; James Rodríguez (@jamesdrodriguez) <a href="https://twitter.com/jamesdrodriguez/status/1808363819527557314?ref_src=twsrc%5Etfw">July 3, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+
+                <div class="news-article">
+                    <h2>James Rodríguez en la Copa América</h2>
+                    <img src="james.jpeg" alt="Evento importante del día">
+                    <p>James Rodríguez es sin duda uno de los mejores jugadores de lo que va de la Copa América 2024, incluso para muchos fue el número uno de la fase de grupos. El ‘10’ ha salido como figura en los tres partidos aportando asistencias y buen juego para la Selección Colombia, ahora varios equipos lo volvieron a poner en el radar de cara al mercado de pases.</p>
+                </div>
+
+                <div class="news-article">
+                    <h2>Trayectoria y Logros</h2>
+                    <img src="james2.jpg" alt="Noticias internacionales">
+                    <p>James Rodríguez ha tenido una destacada carrera en el fútbol internacional. Desde su debut con el Envigado FC en Colombia, ha jugado en varios clubes de renombre como el FC Porto, AS Monaco, Real Madrid, Bayern Múnich y Everton. Entre sus logros más importantes se encuentran:</p>
+                    <ul>
+                        <li>Máximo goleador de la Copa Mundial de la FIFA 2014.</li>
+                        <li>Ganador de la Liga de Campeones de la UEFA con el Real Madrid.</li>
+                        <li>Campeón de la Bundesliga con el Bayern Múnich.</li>
+                        <li>Reconocido como uno de los mejores jugadores jóvenes en Europa durante su tiempo en el AS Monaco.</li>
+                    </ul>
+                </div>
+
+                <div class="news-article">
+                    <h2>Estadísticas en la Copa América 2024</h2>
+                    <img src="james3.png" alt="Actualización económica">
+                    <p>En la Copa América 2024, James ha demostrado su habilidad y liderazgo en el campo. Aquí algunas de sus estadísticas destacadas:</p>
+                    <ul>
+                        <li>Partidos jugados: 3</li>
+                        <li>Asistencias: 4</li>
+                        <li>Goles: 2</li>
+                        <li>Pases completados: 87%</li>
+                    </ul>
+                    <h3>Impacto y Futuro</h3>
+                    <p>James Rodríguez no solo ha sido crucial para el éxito de Colombia en la Copa América, sino que también ha atraído la atención de varios clubes europeos que están interesados en ficharlo para la próxima temporada. Su habilidad para crear oportunidades y su experiencia en competencias internacionales lo hacen un jugador valioso para cualquier equipo.</p>
+                </div>
+            </main>
+
+            <aside>
+                <h2>Publicidad</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod culpa minus hic provident amet reiciendis saepe nemo sunt? Reiciendis provident, aspernatur nam itaque aliquam alias expedita. Accusantium nihil deserunt error! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid expedita cum itaque, minima hic aut corporis fuga. Numquam esse odio incidunt distinctio rerum iusto tempora quae ratione autem, sunt modi.</p>
+            </aside>
+        </div>
+
+        <footer>
+            Copyrigth 2024 Autor Johan Andrey
+        </footer>
+    </div>
+</body>
+</html>
